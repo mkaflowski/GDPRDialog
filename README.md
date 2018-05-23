@@ -46,8 +46,6 @@ To use the library, first include it your project using Gradle
 ### GDPRDialog
 
 ```java
-
-   	//Dialog:
    	GDPRDialog gdpr = new GDPRDialog(this, false);
 
         gdpr.setConsentFormListener(new ConsentFormListener() {
