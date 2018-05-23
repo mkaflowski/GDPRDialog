@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingEnd="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingStart="20dp"
+    android:background="#fafafa"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"> <TextView
+            android:id="@+id/text_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#0d0d0d"
+            android:text="This app personalizes your app and advertising experience through couple of tools. They help us make this app free, improve it and fix all bugs. By consenting to this enhanced experience you will see content that is more relevant to you. Depending on your privacy settings, our partners and tools may collect and process personal data such as device identifiers, location data, and other demographic and interest data about you to provide personalized experience such as advertisement and recommendations. You can change your choice anytime in app settings.\n\nBy agreeing, you are confirming that you are over the age 16 and agree to process your personal data."
+            android:textSize="12dp"
+            />
+
+            <TextView
+                android:id="@+id/tvGDPRLearnMore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="30dp"
+                android:autoLink="all"
+                android:textColor="@color/green_600"
+                android:text="Learn more."
+                android:textSize="13dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/green_700"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/white"
+                android:id="@+id/btGDPRAgree"
+                android:text="Yes, I agree"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:autoLink="all"
+                android:id="@+id/btGDPRDisagree"
+                android:textColor="@color/green_600"
+                android:text="No, thank you"
+                android:textSize="13dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#0d0d0d"
+                android:gravity="center"
+                android:text="I don't want to use features that use my personal data."
+                android:textSize="12dp"
+                /></LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
