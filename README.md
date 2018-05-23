@@ -22,7 +22,7 @@ To use the library, first include it your project using Gradle
 ### Google Consent SDK
 
 ```java
-final ConsentInformation consentInformation = ConsentInformation.getInstance(this);
+	final ConsentInformation consentInformation = ConsentInformation.getInstance(this);
         consentStatus = consentInformation.getConsentStatus();
         String[] publisherIds = {"<pub-number>"};
         consentInformation.requestConsentInfoUpdate(publisherIds, new ConsentInfoUpdateListener() {
