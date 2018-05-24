@@ -21,6 +21,11 @@ To use the library, first include it your project using Gradle
 
 ### Google Consent SDK
 
+Add to manifest:
+```xml
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+```
+
 ```java
 	final ConsentInformation consentInformation = ConsentInformation.getInstance(this);
         consentStatus = consentInformation.getConsentStatus();
