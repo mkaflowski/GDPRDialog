@@ -3,25 +3,23 @@ Dialog with privacy policy.
 
 ## Installation
 
-### Gradle
-
 Add JitPack in your root build.gradle at the end of repositories:
 ```
-allprojects {
-	repositories {
-	   maven { url 'https://jitpack.io' }
+    allprojects {
+        repositories {
+            jcenter()
+            maven { url "https://jitpack.io" }
+        }
     }
-}
 ```
 
-Add it as a dependency in your app's build.gradle file
+Add it as a dependency in your app's build.gradle file:
 ```
-dependencies {
-    implementation 'com.github.rayzone107:DurationView:1.00'
-}
+    dependencies {
+        compile 'com.github.mkaflowski:GDPRDialog:1.x' //CHANGE X TO CURRENT VERSION!!!
+    }
 ```
 	
-
 ## How to use
 
 ### Google Consent SDK
