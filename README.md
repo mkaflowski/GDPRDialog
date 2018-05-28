@@ -3,7 +3,7 @@ Dialog with privacy policy.
 
 ## Installation
 
-###Gradle
+### Gradle
 
 Add JitPack in your root build.gradle at the end of repositories:
 ```
