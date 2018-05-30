@@ -24,6 +24,8 @@ Add it as a dependency in your app's build.gradle file:
 
 ### Google Consent SDK
 
+https://developers.google.com/mobile-ads-sdk/docs/dfp/android/eu-consent
+
 ```java
 	final ConsentInformation consentInformation = ConsentInformation.getInstance(this);
         consentStatus = consentInformation.getConsentStatus();
