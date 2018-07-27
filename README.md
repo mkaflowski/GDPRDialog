@@ -3,25 +3,28 @@ Dialog with privacy policy.
 
 ## Installation
 
-To use the library, first include it your project using Gradle
-
+Add JitPack in your root build.gradle at the end of repositories:
+```
     allprojects {
         repositories {
             jcenter()
             maven { url "https://jitpack.io" }
         }
     }
+```
 
-	dependencies {
-	        compile 'com.github.mkaflowski:GDPRDialog:1.x' //CHANGE X TO CURRENT VERSION!!!
-	}
+Add it as a dependency in your app's build.gradle file:
+```
+    dependencies {
+        compile 'com.github.mkaflowski:GDPRDialog:1.x' //CHANGE X TO CURRENT VERSION!!!
+    }
+```
 	
-
 ## How to use
 
 ### Google Consent SDK
 
-Add to manifest:
+https://developers.google.com/mobile-ads-sdk/docs/dfp/android/eu-consent
 
 ```java
 	final ConsentInformation consentInformation = ConsentInformation.getInstance(this);
