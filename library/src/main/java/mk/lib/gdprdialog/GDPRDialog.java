@@ -75,8 +75,6 @@ public class GDPRDialog {
 
     public void setConsentFormListener(ConsentFormListener consentFormListener) {
         this.consentFormListener = consentFormListener;
-        gdprLearnDialog.setFeatures(features);
-
     }
 
     public void setFeatures(GDPRFeature... features) {
@@ -97,4 +95,7 @@ public class GDPRDialog {
         } else Log.e("GDPRDialog", "You need to add ConsentFormListener to GDPRDialog.");
     }
 
+    public void setPrivacyPolicy(String url) {
+        gdprLearnDialog.setPrivacyPolicy(url);
+    }
 }

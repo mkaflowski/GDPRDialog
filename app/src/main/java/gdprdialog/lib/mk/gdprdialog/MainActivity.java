@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         gdpr.setFeatures(GDPRFeature.GOOGLE, GDPRFeature.FACEBOOK, GDPRFeature.FIREBASE_CRASH_REPORTING, GDPRFeature.FIREBASE_CLOUD_MESSAGING, GDPRFeature.FIREBASE);
+        gdpr.setPrivacyPolicy("https://play.google.com/store/apps/");
         gdpr.show();
     }
 }

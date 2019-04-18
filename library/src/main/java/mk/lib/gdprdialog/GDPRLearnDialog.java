@@ -10,6 +10,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -17,7 +18,8 @@ import java.util.List;
 public class GDPRLearnDialog {
     private AlertDialog alertDialog;
     private Context context;
-    private List<GDPRFeature> features;
+    private List<GDPRFeature> features = new ArrayList<>();
+    private String privacyPolicy= "Privacy Policy";
 
     public GDPRLearnDialog(Context context) {
         this.context = context;
@@ -55,7 +57,11 @@ public class GDPRLearnDialog {
     }
 
     public void setFeatures(List<GDPRFeature> features) {
-        this.features = features;
+        this.features.addAll(features);
+    }
+
+    public void setPrivacyPolicy(String url) {
+        features.add(new GDPRFeature(privacyPolicy, url));
     }
 
     private class FeatureAdapter extends ArrayAdapter<GDPRFeature> {
