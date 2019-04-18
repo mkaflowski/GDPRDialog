@@ -1,6 +1,9 @@
 # GDPRDialog
 Dialog with privacy policy.
 
+![Alt Text](https://github.com/mkaflowski/GDPRDialog/blob/master/raw/device-2019-04-18-122320.png)
+
+
 ## Installation
 
 Add JitPack in your root build.gradle at the end of repositories:
@@ -72,5 +75,6 @@ https://developers.google.com/mobile-ads-sdk/docs/dfp/android/eu-consent
             }
         });
         gdpr.setFeatures(GDPRFeature.GOOGLE, GDPRFeature.FACEBOOK, GDPRFeature.FIREBASE_CRASH_REPORTING, GDPRFeature.FIREBASE_CLOUD_MESSAGING, GDPRFeature.FIREBASE);
+	gdpr.setPrivacyPolicy("https://play.google.com/store/apps/");
         gdpr.show();
 ```
